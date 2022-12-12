@@ -1,0 +1,346 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	height:100%;
+	width:100%;
+	}
+body {
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background:#f7f7f7;
+	font-size:1em;
+	font-family:"Segoe UI", sans-serif;
+	line-height:135%;
+}
+/* Ссылки*/
+a:hover {
+	color: #d6d215;
+	text-decoration:underline;
+	transition: all.6s ease;
+}
+a {
+	color: #7ea823;
+	text-decoration:none;
+	transition: all.6s ease;
+}
+a:active {
+	color: red;
+	text-decoration:underline;
+	transition: all.6s ease;
+}
+img {
+	max-width:100%;
+	height:auto;
+	width:auto\9;
+}
+
+hr{
+	display:block;
+	border:0;
+	height:1px;
+	border-top:1px solid #ccc;
+	padding:0;
+}
+
+/*Selection block* (выделение текста на странице)*/
+::selection {
+	background:#42f486; color:#fff
+	}
+header, footer {
+	width:98%;
+	background-color:#fff;
+	float:left;
+}
+header {
+	border-bottom: 2px solid silver;
+	padding:1%;
+}
+#logo {
+	font-size:2em;
+	font-family:fantasy ;
+	text-decoration:none;
+	transition: all.0s ease;
+}
+#logo:hover {
+	transition: all.6s ease;
+}
+/* О нас */
+#contact{
+	font-size:1.3em;
+	font-family: serif;
+	margin-left:20px;
+	text-decoration:none;
+	transition: all.0s ease;
+}
+/* Поле регистрации */
+#cheaking{
+	font-size:1em;
+	font-family: serif;
+	margin-left:20px;
+	text-decoration:none;
+	transition: all.0s ease;
+}
+/*Поле авторизации*/
+#entrance{
+	font-size:1em;
+	font-family: serif;
+	margin-left:20px;
+	text-decoration:none;
+	transition: all.0s ease;
+}
+.right{
+	float:right;
+}
+.left{
+	float:left;
+}
+.clear{
+	clear:both;
+}
+/*Поле поиска*/
+input[type=text].field {
+	border-radius:5px;
+	border:2px solid silver;
+	padding:5px;
+	margin-left: 20px;
+	outline:none; /* Убрать голубую рамку при нажатии на поле, которая в гугле по умол. */
+}
+input[type=text].field:focus {
+	border: 2px solid #d6d215;
+}
+/*Раздел меню*/
+#menu{
+	color:#1f9b4a;
+	font-family:sans-serif;
+	font-size:1.7em;
+}
+
+#menu hr{
+	width:500px;
+	max-width:100%;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+#menuHrefs a{
+	padding:5px;
+	border-radius:5px;
+	margin-right:5px;
+	text-decoration:none;
+}
+
+#menuHrefs a:hover{
+	background-color:#ececec;
+}
+/*Основные стили для сайта*/
+
+#wraper{
+	float:left;
+	width:100%;
+	margin-top:20px;
+}
+
+#wraper #articles{
+	float:left;
+	width:80%;
+	margin-left:10%;
+}
+
+#wraper #articles article{
+	float:left;
+	border:1px solid silver;
+	box-sizing:border-box;
+	border-radius:5px;
+	background-color:#fafafa;
+}
+
+@media(min-width: 700px){
+#wraper #articles article{
+	width:31.3333%;
+	margin-right:2%;
+	height:660px;
+	position:relative;
+}}
+
+@media(max-width: 699px){
+#wraper #articles article{
+	width:96%;
+	margin-right:2%;
+	position:relative;
+}}
+
+
+#wraper #articles article img{
+	width:100%;
+	height:450px;
+	border-radius:5px 5px 0 0;
+	border-bottom:1px solid silver;
+	margin-bottom:10px;
+}
+
+#wraper #articles article h2{
+	width:90%;
+	margin-left:5%;
+	color:#4a4a4a;
+	text-indent:1em;
+	margin-bottom:10px;
+}
+
+#wraper #articles article p{
+	width:80%;
+	margin-left:5%;
+	text-indent:1em;
+}
+
+#wraper #articles article a{
+	color:#fff;
+	background-color:#4ec48b;
+	position:relative;
+    margin:0% 35%;
+	border-radius:5px;
+	text-decoration:none;
+	padding:5px;
+	float:left;
+	bottom:10px;
+	position:absolute;
+	transition: all.0s ease;
+	
+}
+
+#wraper #articles article a:hover{
+	background-color:#349e6a;
+	transition: all.6s ease;
+}
+
+/*Стили для странички о нас*/
+
+#about_us {
+	width:100%;
+	float:left;
+	background-color: #fafafa;
+	border-radius:5px;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	padding:1%;
+}
+
+/*Стили для формы*/
+
+form {
+	width:60%;
+	margin-left:20%;
+}
+
+form label {
+	float:left;
+	width:100%;
+	margin-bottom: 10px;
+}
+
+form input {
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding:5px; 
+	float: left;
+	clear:both;
+	background-color:#fafafa;
+	width:40%;
+	margin-bottom: 10px;
+	outline:none; /* Убрать голубую рамку при нажатии на поле, которая в гугле по умол. */
+}
+
+form input:focus, form textarea:focus {border: 2px solid #d6d215}
+
+form textarea {
+	width:60%;
+	float:left;
+	clear:both;
+	background-color:#fafafa;
+	border: 2px solid silver;
+	border-radius: 5px;
+	padding: 10px;
+	font-size:1.5em;
+	outline:none; /* Убрать голубую рамку при нажатии на поле, которая в гугле по умол. */
+}
+
+form #send {
+	float:left;
+	width:30%;
+	padding: 10px;
+	background-color: #4ec48b;
+	border-radius: 7px;	
+	margin-top: 20px;
+	font-size: 1.5em;
+	color: #fff;
+	cursor: pointer;
+}
+
+form #send:hover {
+	background-color:#349e6a;
+	transition: all.6s ease;
+}
+
+/*Центральный блок сайта*/
+
+#main_soc_block{
+	width:100%;
+	padding:2% 0;
+	border-top:2px solid silver;
+	border-bottom:2px solid silver;
+	margin:20px 0;
+	float:left;
+	background:url('../IMG/обрезка1.jpg') repeat-x center;
+	
+}
+
+#main_soc_block_in{
+	text-align:center;
+	padding:1%;
+	height:100px;
+	background-color:#fafafa;
+	border:1px solid silver;
+	border-radius:7px;
+	width:500px;
+	max-width:98%;
+	box-sizing:border-box;
+}
+
+#main_soc_block_in a{
+	float:left;
+	padding:5px 10px;
+	margin:20px 35%;
+	background-color:#2de06f;
+	border-radius:7px;
+	color:#fff;
+	
+}
+
+/*Футер*/
+footer {
+	padding:1%;
+	border-top: 2px solid silver;
+	margin-top: 10px;
+	padding-bottom:2%;
+	font-size:0.8em;
+}
+footer img {
+	margin-right:5px;
+	float:left;
+}
+footer img{width:20%}
+
+#page-wrap:after{
+	display:block;
+}
+
+footer, #page-wrap:after{
+	height:10px;
+}
+#page-wrap{
+	min-height:93%;
+	margin-bottom-10px;
+}
